@@ -19,7 +19,7 @@ const upload = multer({ storage: multer.memoryStorage() }); // Stocker le fichie
 
 
 // Initialisation Firebase Admin SDK
-const serviceAccount = require('./configuration/serviceAccountKey.json'); // Clé privée Firebase
+const serviceAccount = require('../configuration/serviceAccountKey.json'); // Clé privée Firebase
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
